@@ -9,5 +9,15 @@
 ![image](https://github.com/metaStor/Filter_MemShell/blob/main/example/2.png)
 
 
-访问完成之后，自行删除上传的meta.jsp
-采用反射来适配不同环境下的tomcat环境，适配范围：Tomcat 7~9
+
+
+## 特征
+
+* 采用反射来适配不同环境下的tomcat环境，适配范围：Tomcat 7~9
+* 得益于filter的原理，`不需要路径真实存在`
+* 代码只在web层实现了自删除，但物理层还是需要自行删除上传的 meta.jsp
+
+
+## TODO
+
+weblogic 环境的注入
